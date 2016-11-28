@@ -6,7 +6,7 @@
     "type": "git",
     "url": "https://github.com/christianalfoni/formsy-react.git"
   },
-  "main": "lib/main.js",
+  "main": "dist/main.js",
   "scripts": {
     "deploy": "NODE_ENV=production webpack -p --config webpack.production.config.js",
     "test": "babel-node testrunner",
