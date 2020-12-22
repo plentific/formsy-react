@@ -289,7 +289,7 @@ Formsy.Form = createReactClass({
       this.runRules(value, currentValues, component._requiredValidations)
     ])
     .then(([validationResults, requiredResults]) => {
-      if (this.cachedValues[component.props.name] !== value) {
+      if (this.cachedValues[component.props.name] === value) {
         return
       }
 
