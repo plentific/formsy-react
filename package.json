@@ -11,7 +11,8 @@
     "build": "NODE_ENV=production webpack -p --config webpack.production.config.js",
     "test": "babel-node testrunner",
     "examples": "webpack-dev-server --config examples/webpack.config.js --content-base examples",
-    "prepare": "babel ./src/ -d ./lib/"
+    "prepare": "babel ./src/ -d ./lib/",
+    "prepack": "babel ./src/ -d ./lib/"
   },
   "author": "Christian Alfoni",
   "license": "MIT",
